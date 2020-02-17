@@ -39,7 +39,7 @@ export default class App extends React.Component {
     }
 
     async updateGameMappings(userSelections, userName) {
-        await axios.post(`http://${env.HOST}/games`, {userSelections, userName});
+        await axios.post(`https://${env.HOST}/games`, {userSelections, userName});
 
 }
 
