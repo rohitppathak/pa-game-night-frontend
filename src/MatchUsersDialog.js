@@ -25,7 +25,7 @@ export default class MatchUsersDialog extends React.Component {
     }
 
     componentDidMount() {
-        axios.get(`http://${env.HOST}/matchUsers`).then(res => {
+        axios.get(`https://${env.HOST}/matchUsers`).then(res => {
             const {gameList, unmatchedUsers} = res.data;
             this.setState({
                 gameList,

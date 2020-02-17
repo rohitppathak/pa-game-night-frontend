@@ -40,21 +40,23 @@ export default class App extends React.Component {
 
     async updateGameMappings(userSelections, userName) {
         await axios.post(`http://${env.HOST}/games`, {userSelections, userName});
-    }
 
-    async removeUser(userName) {
-        await axios.delete(`http://${env.HOST}/users/${userName}`);
+}
+
+
+async removeUser(userName) {
+        await axios.delete(`https://${env.HOST}/users/${userName}`);
     }
 
     async deleteUserFromGame(playerIndex, gameIndex, userId, gameId) {
         _.pullAt(this.state.gameMappings.gameList[gameIndex].interestedPlayers, playerIndex);
         this.setState({gameMappings: this.state.gameMappings});
-        await axios.delete(`http://${env.HOST}/games/${gameId}/users/${userId}`);
+        await axios.delete(`https://${env.HOST}/games/${gameId}/users/${userId}`);
     }
 
     async addGame(gameObject) {
         this.state.gameMappings.gameList.push(gameObject);
-        await axios.put(`http://${env.HOST}/games`, gameObject);
+        await axios.put(`https://${env.HOST}/games`, gameObject);
     }
 
     render() {

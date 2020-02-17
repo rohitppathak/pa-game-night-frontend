@@ -47,7 +47,7 @@ export default class ParticipantApp extends React.Component {
                 });
                 return;
             }
-            let response = await axios.get(`http://${env.HOST}/users/${this.state.userName}`);
+            let response = await axios.get(`https://${env.HOST}/users/${this.state.userName}`);
             response = response.data;
             if (!response.success) {
                 this.setState({errorMessage: 'Username not found!'});
@@ -64,7 +64,7 @@ export default class ParticipantApp extends React.Component {
                 });
                 return;
             }
-            const response = await axios.post(`http://${env.HOST}/users/${this.state.userName}`);
+            const response = await axios.post(`https://${env.HOST}/users/${this.state.userName}`);
             if (response.data === 'failure') this.setState({
                 errorMessage: 'A user with that' +
                               ' name' +
