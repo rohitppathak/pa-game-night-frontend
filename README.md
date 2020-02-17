@@ -1,67 +1,12 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-## Available Scripts
+# PA Game Night Frontend
 
-In the project directory, you can run:
+This project is hosted at https://blooming-coast-46890.herokuapp.com/.
 
-### `npm start`
+## Overview
+The goal of this project is to help assign users to games during an event to maximize the number of users who can play their preferred games. Participants are able to login with their name as a new or existing user and select up to three games (ranked) that they prefer to play. The participants can view which games people are most interested in through real-time updates and get an overview of which users selected which games. The organizers have the ability to remove users, remove users from games, and add games. In addition, they can also press the Match Users button to optimally match users to games to maximize the number of players and the preferences of the games.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Local Use
+This project was created using create-react-app. To run it locally, simply clone the repo, run `npm install`, and then `npm start` and it will open up in a browser. To connect to a local instance of the backend server, follow the `Local Use` instructions here: https://github.com/rohitppathak/pa-game-night-backend. 
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## Authors
+The initial frontend code was written by Kevin Zhang, Jean Zhang, and Cristina Rong here: https://github.com/christinarong/pa-game-night. Andrew McCann and I built upon the original code to add more features.
