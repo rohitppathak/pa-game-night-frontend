@@ -9,7 +9,7 @@ import {w3cwebsocket as W3WebSocket} from 'websocket';
 
 import "./App.css";
 
-const socket = new W3WebSocket(`ws://${env.HOST}`);
+const socket = new W3WebSocket(`wss://${env.HOST}`);
 
 export default class App extends React.Component {
     constructor(props) {
